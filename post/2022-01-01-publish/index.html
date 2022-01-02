@@ -6,7 +6,7 @@
 <title>Create and Host a Blog for Free (~1 hour) - Notes</title>
 <meta name=description content="Use GitHub Pages and Hugo to get your blog online in about an hour (at no cost).">
 <meta name=author content="Denise Case"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"Notes","url":"https:\/\/denisecase.github.io\/notes\/"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/denisecase.github.io\/notes\/"}</script>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","name":"Create and host a blog for free ( 1 hour)"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"Denise Case"},"headline":"Create and Host a Blog for Free (~1 hour)","description":"Thinking about sharing some interesting content on the web? Modern tools make it easy to publish content for free.","inLanguage":"en","wordCount":1119,"datePublished":"2022-01-01T00:00:00","dateModified":"2022-01-01T00:00:00","image":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","keywords":["blog, github-pages, go, hugo"],"mainEntityOfPage":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","publisher":{"@type":"Organization","name":"https:\/\/denisecase.github.io\/notes\/","logo":{"@type":"ImageObject","url":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","height":60,"width":60}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","name":"Create and host a blog for free ( 1 hour)"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"Denise Case"},"headline":"Create and Host a Blog for Free (~1 hour)","description":"Thinking about sharing some interesting content on the web? Modern tools make it easy to publish content for free.","inLanguage":"en","wordCount":1141,"datePublished":"2022-01-01T00:00:00","dateModified":"2022-01-01T00:00:00","image":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","keywords":["blog, github-pages, go, hugo"],"mainEntityOfPage":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","publisher":{"@type":"Organization","name":"https:\/\/denisecase.github.io\/notes\/","logo":{"@type":"ImageObject","url":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","height":60,"width":60}}}</script>
 <meta property="og:title" content="Create and Host a Blog for Free (~1 hour)">
 <meta property="og:description" content="Use GitHub Pages and Hugo to get your blog online in about an hour (at no cost).">
 <meta property="og:image" content="https://denisecase.github.io/notes/img/avatar-icon.png">
@@ -110,7 +110,7 @@
 <span class=post-meta>
 <i class="fas fa-calendar"></i>&nbsp;Posted on Sat January 1, 2022
 &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
-&nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1119&nbsp;words
+&nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1141&nbsp;words
 &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Denise Case
 </span>
 </div>
@@ -131,8 +131,19 @@
 <p>There&rsquo;s another option - using a &ldquo;static site generator&rdquo;. For these, content is written in a simple markup language and then run through a process to create the HTML for a web page. Hugo is a static site generator written in Go.</p>
 <p>These notes show you how to use Hugo and GitHub to get your blog up and running in about an hour.</p>
 <hr>
-<h2 id=create-two-github-repositories>Create Two GitHub Repositories</h2>
-<p>Create a free account on <a href=https://github.com/pricing>GitHub</a>. You&rsquo;ll choose a username and provide an email address and password. Your username will become part of your hosted URL (the address of your website). You can use your GitHub account to create respositories (typically called <strong>repos</strong> for short). Each repo is like a folder or directory that holds a variety of files for a particular project.</p>
+<h2 id=helpful-links>Helpful Links</h2>
+<ul>
+<li>Repo <a href=https://github.com/denisecase/notes-source>notes-source</a> - private repo for developing content</li>
+<li>Repo <a href=https://github.com/denisecase/notes>notes</a> - public repo with site content</li>
+<li>Site <a href=https://denisecase.github.io/notes/>notes</a></li>
+</ul>
+<hr>
+<h2 id=start-by-creating-two-github-repositories>Start By Creating Two GitHub Repositories</h2>
+<p>Create a free account on <a href=https://github.com/pricing>GitHub</a>.
+You&rsquo;ll choose a username and provide an email address and password.
+Your username will become part of your hosted URL (the address of your website).
+You can use your GitHub account to create respositories (typically called <strong>repos</strong> for short).
+Each repo is like a folder or directory that holds a variety of files for a particular project.</p>
 <p>We&rsquo;ll create two repos: one private (for writing) and one public (for publishing).</p>
 <ol>
 <li>Create one new GitHub repo for writing. Make it private with no files. It will hold the source. I call mine <code>notes-source</code>, but blog-source or something similar will work great.</li>
