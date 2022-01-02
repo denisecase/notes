@@ -196,6 +196,7 @@ and your repo name instead of <code>notes-source</code>.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=n>hugo</span> <span class=n>server</span>
 </code></pre></div><p>Open browser to <a href=http://localhost:1313/notes>http://localhost:1313/notes</a>. Replace <code>notes</code> with the name of your PUBLIC repo you created at the beginning.</p>
 <p>ERROR? If you get this error: &ldquo;Failed to read Git log: fatal: your current branch &lsquo;main&rsquo; does not have any commits yet&rdquo; you have <code>enableGitInfo = true</code> in config.toml, but there&rsquo;s nothing to report. Set config.toml enableGitInfo to <code>false</code> until everything is working.</p>
+<hr>
 <h2 id=once-it-runs-add-more-content>Once It Runs, Add More Content</h2>
 <p>Create additional files in your repo:</p>
 <ul>
@@ -213,6 +214,7 @@ and your repo name instead of <code>notes-source</code>.</p>
 <li><a href=https://github.com/denisecase/notes-source-example/blob/main/content/_index.md>content/_index.md</a> is the opening page of your blog - customize as you like.</li>
 <li>You&rsquo;ll need to change the <strong>name</strong> and <strong>contents</strong> of the last file <a href=https://raw.githubusercontent.com/denisecase/notes-source-example/main/content/post/2022-01-01-publish.md>content/post/2022-01-01-publish.md</a>- it&rsquo;s your first article. Be sure to follow the naming conventions and be careful when editing the contents. Errors can keep your site from running. If you get them just go back to the content in this repo and then slowly modify it while running. If it breaks, you&rsquo;ll know where to focus.</li>
 </ul>
+<hr>
 <h2 id=one-time-create-a-github-personal-access-token>One Time: Create A GitHub Personal Access Token</h2>
 <p>In <a href=https://github.com/denisecase/notes-source-example/blob/main/.github/workflows/deploy.yml>.github/workflows/deploy.yml</a>, we see <code>personal_token: ${{ secrets.PERSONAL_TOKEN }}</code>.
 This tells GitHub we have authorization to write to a different repository which will then use GitHub Pages to host.</p>
@@ -252,6 +254,7 @@ This tells GitHub we have authorization to write to a different repository which
 <li><a href=https://gohugo.io/>Hugo website</a></li>
 <li><a href=https://gohugo.io/tools/migrations/>Migrate to Hugo</a></li>
 </ul>
+<hr>
 <div class=blog-tags>
 <a href=https://denisecase.github.io/notes//tags/blog/>blog</a>&nbsp;
 <a href=https://denisecase.github.io/notes//tags/github-pages/>github-pages</a>&nbsp;
