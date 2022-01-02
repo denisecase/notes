@@ -6,7 +6,7 @@
 <title>Create and Host a Blog for Free (~1 hour) - Notes</title>
 <meta name=description content="Use GitHub Pages and Hugo to get your blog online in about an hour (at no cost).">
 <meta name=author content="Denise Case"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"Notes","url":"https:\/\/denisecase.github.io\/notes\/"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/denisecase.github.io\/notes\/"}</script>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","name":"Create and host a blog for free ( 1 hour)"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"Denise Case"},"headline":"Create and Host a Blog for Free (~1 hour)","description":"Thinking about sharing some interesting content on the web? Modern tools make it easy to publish content for free.","inLanguage":"en","wordCount":981,"datePublished":"2022-01-01T00:00:00","dateModified":"2022-01-01T00:00:00","image":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","keywords":["blog, github-pages, go, hugo"],"mainEntityOfPage":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","publisher":{"@type":"Organization","name":"https:\/\/denisecase.github.io\/notes\/","logo":{"@type":"ImageObject","url":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","height":60,"width":60}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","name":"Create and host a blog for free ( 1 hour)"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"Denise Case"},"headline":"Create and Host a Blog for Free (~1 hour)","description":"Thinking about sharing some interesting content on the web? Modern tools make it easy to publish content for free.","inLanguage":"en","wordCount":1119,"datePublished":"2022-01-01T00:00:00","dateModified":"2022-01-01T00:00:00","image":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","keywords":["blog, github-pages, go, hugo"],"mainEntityOfPage":"https:\/\/denisecase.github.io\/notes\/post\/2022-01-01-publish\/","publisher":{"@type":"Organization","name":"https:\/\/denisecase.github.io\/notes\/","logo":{"@type":"ImageObject","url":"https:\/\/denisecase.github.io\/notes\/img\/avatar-icon.png","height":60,"width":60}}}</script>
 <meta property="og:title" content="Create and Host a Blog for Free (~1 hour)">
 <meta property="og:description" content="Use GitHub Pages and Hugo to get your blog online in about an hour (at no cost).">
 <meta property="og:image" content="https://denisecase.github.io/notes/img/avatar-icon.png">
@@ -109,8 +109,8 @@
 <h2 class=post-subheading>Use GitHub Pages and Hugo to get your blog online in about an hour (at no cost).</h2>
 <span class=post-meta>
 <i class="fas fa-calendar"></i>&nbsp;Posted on Sat January 1, 2022
-&nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;minutes
-&nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;981&nbsp;words
+&nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
+&nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1119&nbsp;words
 &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Denise Case
 </span>
 </div>
@@ -138,6 +138,10 @@
 <li>Create one new GitHub repo for writing. Make it private with no files. It will hold the source. I call mine <code>notes-source</code>, but blog-source or something similar will work great.</li>
 <li>Create one new GitHub repo for the deployed content. Make it public with no files. It will hold the content that will be published with GitHub Pages. I call mine <code>notes</code>, but blog or similar would work as well.</li>
 </ol>
+<p>In your second (public) repo, click Settings. For example, this takes me to <a href=https://github.com/denisecase/notes/settings>https://github.com/denisecase/notes/settings</a>, but you&rsquo;ll need to change <code>denisecase</code> to your GitHub username and <code>notes</code> to your public repo name (e.g. blog).</p>
+<p>In the repo settings, scroll down to &ldquo;GitHub Pages&rdquo; / click &ldquo;Check it out here!&rdquo;.
+Change &ldquo;None&rdquo; to <code>main</code> / click &ldquo;Save&rdquo;.</p>
+<p>It will display the URL for your free site. Mine is <a href=https://denisecase.github.io/notes/>https://denisecase.github.io/notes/</a>, but you&rsquo;ll need to change <code>denisecase</code> to your username and <code>notes</code> to the name of your public repo.</p>
 <hr>
 <h2 id=install-basic-tools>Install Basic Tools</h2>
 <p>You&rsquo;ll need Git and Go installed.</p>
@@ -172,33 +176,36 @@ and your repo name instead of <code>notes-source</code>.</p>
 <span class=n>git</span> <span class=n>init</span>
 <span class=n>git</span> <span class=n>submodule</span> <span class=n>add</span> <span class=n>https</span><span class=err>:</span><span class=p>//</span><span class=n>github</span><span class=p>.</span><span class=n>com</span><span class=p>/</span><span class=n>halogenica</span><span class=p>/</span><span class=n>beautifulhugo</span><span class=p>.</span><span class=n>git</span> <span class=n>themes</span><span class=p>/</span><span class=n>beautifulhugo</span>
 </code></pre></div><h2 id=customize-hugo-configuration>Customize Hugo Configuration</h2>
-<p>Customize config.toml. See example in this repo and <a href=https://themes.gohugo.io/themes/beautifulhugo/>https://themes.gohugo.io/themes/beautifulhugo/</a>. I recommend copying the information from the &lt;config.toml> file in this repo into yours, then editing yours to reflect your URL, author information, and content.</p>
+<p>Customize config.toml. See <a href=https://themes.gohugo.io/themes/beautifulhugo/>https://themes.gohugo.io/themes/beautifulhugo/</a>. I recommend copying the information from the example <a href=https://github.com/denisecase/notes-source-example/blob/main/config.toml>config.toml</a> file into yours, then editing yours to reflect your URL, author information, and content.</p>
 <hr>
 <h2 id=run-your-site-locally>Run Your Site Locally</h2>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=n>hugo</span> <span class=n>server</span>
 </code></pre></div><p>Open browser to <a href=http://localhost:1313/notes>http://localhost:1313/notes</a>. Replace <code>notes</code> with the name of your PUBLIC repo you created at the beginning.</p>
 <p>ERROR? If you get this error: &ldquo;Failed to read Git log: fatal: your current branch &lsquo;main&rsquo; does not have any commits yet&rdquo; you have <code>enableGitInfo = true</code> in config.toml, but there&rsquo;s nothing to report. Set config.toml enableGitInfo to <code>false</code> until everything is working.</p>
 <h2 id=once-it-runs-add-more-content>Once It Runs, Add More Content</h2>
-<p>Create additional files in your repo by using the examples in this repo</p>
+<p>Create additional files in your repo:</p>
 <ul>
 <li>.gitignore</li>
 <li>README.md</li>
 <li>.github/workflows/deploy.yml</li>
-<li>content/post/_index.md</li>
+<li>content/_index.md</li>
 <li>content/post/2022-01-01-publish.md</li>
 </ul>
 <p>Edits:</p>
 <ul>
-<li>The first file, .gitignore shouldn&rsquo;t need changes.</li>
-<li>Customize the README.md as you like - it&rsquo;s like an &ldquo;About&rdquo; page for your project, and won&rsquo;t appear in your hosted website.</li>
-<li>deploy.yml is discussed later is used to auto copy and deploy. Find the line with external_repository: denisecase/notes and change it to use your GitHub account name (instead of <code>denisecase</code>) and your PUBLIC repo name (instead of <code>notes</code>).</li>
-<li>_index.md is the opening page of your blog - customize it as you like.</li>
-<li>You&rsquo;ll need to change the name and contents of the last file - it&rsquo;s your first article. Be sure to follow the naming conventions and be careful when editing the contents. Errors can keep your site from running. If you get them just go back to the content in this repo and then slowly modify it while running. If it breaks, you&rsquo;ll know where to focus.</li>
+<li>The first file, <a href=https://github.com/denisecase/notes-source-example/blob/main/.gitignore>.gitignore</a> should duplicate the example linked.</li>
+<li>Customize the <a href=https://github.com/denisecase/notes-source-example/blob/main/README.md>README.md</a> as you like - it&rsquo;s like an &ldquo;About&rdquo; page for your project, and won&rsquo;t appear in your hosted website. It&rsquo;s a good place to record commands and reminders.</li>
+<li><a href=https://github.com/denisecase/notes-source-example/blob/main/.github/workflows/deploy.yml>.github/workflows/deploy.yml</a> is used to auto copy and deploy. Find the line with external_repository: denisecase/notes and change it to use your GitHub account name (instead of <code>denisecase</code>) and your PUBLIC repo name (instead of <code>notes</code>). You&rsquo;ll also need to replace ${{ secrets.PERSONAL_TOKEN }} with the actual token you create below.</li>
+<li><a href=https://github.com/denisecase/notes-source-example/blob/main/content/_index.md>content/_index.md</a> is the opening page of your blog - customize as you like.</li>
+<li>You&rsquo;ll need to change the <strong>name</strong> and <strong>contents</strong> of the last file <a href=https://raw.githubusercontent.com/denisecase/notes-source-example/main/content/post/2022-01-01-publish.md>content/post/2022-01-01-publish.md</a>- it&rsquo;s your first article. Be sure to follow the naming conventions and be careful when editing the contents. Errors can keep your site from running. If you get them just go back to the content in this repo and then slowly modify it while running. If it breaks, you&rsquo;ll know where to focus.</li>
 </ul>
 <h2 id=one-time-create-a-github-personal-access-token>One Time: Create A GitHub Personal Access Token</h2>
-<p>In .github/workflows/deploy.yml, we see <code>personal_token: ${{ secrets.PERSONAL_TOKEN }}</code>.
+<p>In <a href=https://github.com/denisecase/notes-source-example/blob/main/.github/workflows/deploy.yml>.github/workflows/deploy.yml</a>, we see <code>personal_token: ${{ secrets.PERSONAL_TOKEN }}</code>.
 This tells GitHub we have authorization to write to a different repository which will then use GitHub Pages to host.</p>
 <p>Create a GitHub Personal Access Token by following the instructions <a href=https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>here</a>. Set the token to never expire (or choose a different date) and check the top-level box for <code>repo</code> and <code>admin:repo_hook</code>.</p>
+<p>It will give you one chance to copy the token to your clipboard - do so. Copy it to your clipboard and replace <code>${{ secrets.PERSONAL_TOKEN }}</code> with your token.</p>
+<p>In your private repo ONLY (don&rsquo;t share secrets), the line should look something like:</p>
+<p><code> personal_token: ghp_abcdefghijklmnopq...</code></p>
 <h2 id=one-time-link-local-source-repo-to-github-source-repo>One Time: Link Local Source Repo to GitHub Source Repo</h2>
 <p>We&rsquo;ve already run git init to create a git repo locally. Now we want to change the default branch to main, set the origin alias to your GitHub repo URL, then git add all the files, git commit our changes, and then git push up the cloud repo. Change <code>denisecase</code> to your GitHub username and <code>notes-source</code> to your new private repo.</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-PowerShell data-lang=PowerShell><span class=n>git</span> <span class=n>branch</span> <span class=n>-M</span> <span class=n>main</span>
